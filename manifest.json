@@ -1,0 +1,20 @@
+{
+	"name": "Chrome humans.txt Viewer",
+	"version": "0.1",
+	"description": "Viewer for the humans.txt file. More info on humanstxt.org.",
+	"icons": {
+		"16": "humans-txt.png",
+		"48": "humans-txt.png",
+		"128": "humans-txt.png"
+	},
+	"page_action": {
+		"default_icon": "icons/humans-txt.png",
+		"default_title": "Discover who built this website",
+		"default_popup": "viewer.html"
+	},
+	"permissions": [
+		"http://*/**",
+		"https://*/**"
+	]
+}
+
