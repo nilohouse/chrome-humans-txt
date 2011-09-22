@@ -8,6 +8,13 @@
 		"48": "48.png",
 		"128": "128.png"
 	},
+	"content_scripts":[
+	    {
+	        "matches":["http://*/**", "https://*/**"],
+	        "js": ["contentscript.js"],
+	        "run_at":"document_end"
+	    }
+	],
 	"page_action": {
 		"default_icon": "128.png",
 		"default_title": "Discover who built this website",
