@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Museo300Regular';
+    src: url('http://humanstxt.org/fonts/museo300-regular-webfont.eot');
+    src: local('?'), url('http://humanstxt.org/fonts/museo300-regular-webfont.woff') format('woff'), url('http://humanstxt.org/fonts/museo300-regular-webfont.ttf') format('truetype'), url('http://humanstxt.org/fonts/museo300-regular-webfont.svg#webfontVHHYtszH') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo500Regular';
+    src: url('http://humanstxt.org/fonts/museo500-regular-webfont.eot');
+    src: local('?'), url('http://humanstxt.org/fonts/museo500-regular-webfont.woff') format('woff'), url('http://humanstxt.org/fonts/museo500-regular-webfont.ttf') format('truetype'), url('http://humanstxt.org/fonts/museo500-regular-webfont.svg#webfontVHHYtszH') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main {
+    font-family:'Museo500Regular', sans-serif;
+    margin: 0 auto;
+	text-align: left;
+	padding: 40px 20px;
+	width: 450px;
+}
+
