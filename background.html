@@ -5,11 +5,17 @@
     <script src="extension.js" type="text/javascript"></script>
     <script type="text/javascript">
         chrome.extension.onRequest.addListener(function(requestData, sender){
-          if(requestData.message == "checkHumansTxt")
-          chrome.pageAction.show(sender.tab.id);
-          $.ajax(requestData.url, function(data){
-            var humansData = $(data).parse();
-          });
+          if(requestData.message == "checkHumansTxt") {
+            chrome.pageAction.show(sender.tab.id);
+            $.ajax({
+              url: requestData.url,
+              success: function(data) {
+                var humansData = $.parseText(data);
+                console.log(humansData);
+              },
+              dataType: 'text'
+            });
+          }
         });
     </script>
 </head>
